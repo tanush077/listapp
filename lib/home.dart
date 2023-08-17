@@ -1,6 +1,5 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
+import 'package:listapp/cards.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -51,6 +50,20 @@ class _HomepageState extends State<Homepage> {
                     fontWeight: FontWeight.bold,
                     fontStyle: FontStyle.italic,
                     decoration: TextDecoration.underline),
+              ),
+              const SizedBox(height: 50),
+              Expanded(
+                child: ListView(
+                  children: const <Widget>[
+                    Cardpreset(
+                      cardBorderColor: Colors.red,
+                      imageAsset: 'assets/images/google.png',
+                      tileBackgroundColor: Colors.white,
+                      tileBorderColor: Colors.black,
+                      title: 'Google',
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
