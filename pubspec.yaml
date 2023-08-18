@@ -64,6 +64,10 @@ flutter:
     - assets/images/apple.png
     - assets/images/microsoft.png
     - assets/images/google.png
+    - assets/images/kite.png
+    - assets/images/samsung.png
+    - assets/images/flipkart.png
+    - assets/images/amazon.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
