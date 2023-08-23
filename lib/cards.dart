@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Cardpreset extends StatelessWidget {
   final Color cardBorderColor;
@@ -6,6 +7,7 @@ class Cardpreset extends StatelessWidget {
   final Color tileBackgroundColor;
   final String imageAsset;
   final String title;
+  final String url;
 
   const Cardpreset({
     super.key,
@@ -14,7 +16,16 @@ class Cardpreset extends StatelessWidget {
     required this.tileBackgroundColor,
     required this.imageAsset,
     required this.title,
+    required this.url,
   });
+
+  _launchURLBrowser(String ur) async {
+    if (await canLaunch(ur)) {
+      await launch(ur);
+    } else {
+      throw 'Could not launch $ur';
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -45,10 +56,13 @@ class Cardpreset extends StatelessWidget {
                 style:
                     const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
-              trailing: const Icon(
-                Icons.arrow_right,
-                size: 50,
+              trailing: IconButton(
+                alignment: Alignment.topLeft,
+                icon: const Icon(Icons.arrow_right, size: 50),
                 color: Colors.black,
+                onPressed: () {
+                  _launchURLBrowser(url);
+                },
               ),
             )
           ],

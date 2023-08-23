@@ -116,14 +116,19 @@ class _HomeState extends State<Home> {
             width: 200,
           ),
           const SizedBox(height: 30),
-          const Text(
-            'Trial list :',
-            style: TextStyle(
-                color: Colors.white,
-                fontSize: 28,
-                fontWeight: FontWeight.bold,
-                fontStyle: FontStyle.italic,
-                decoration: TextDecoration.underline),
+          const Center(
+            child: SizedBox(
+              width: 250,
+              child: Text(
+                '  Click on the arrow : ',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 28,
+                  fontWeight: FontWeight.bold,
+                  fontStyle: FontStyle.italic,
+                ),
+              ),
+            ),
           ),
           const SizedBox(height: 50),
           Expanded(
