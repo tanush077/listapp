@@ -28,9 +28,9 @@ class _HomepageState extends State<Homepage> {
           height: MediaQuery.of(context).size.height,
           decoration: const BoxDecoration(
             gradient: LinearGradient(colors: [
-              Color.fromARGB(255, 1, 4, 57),
-              Color.fromARGB(255, 58, 4, 68),
-            ], begin: Alignment.topLeft, end: Alignment.bottomRight),
+              Color.fromARGB(255, 22, 22, 22),
+              Color.fromARGB(255, 22, 22, 22)
+            ], begin: Alignment.topCenter, end: Alignment.bottomCenter),
           ),
           child: Column(
             children: [
@@ -61,7 +61,7 @@ class _HomepageState extends State<Homepage> {
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
-          backgroundColor: Colors.black,
+          backgroundColor: const Color.fromARGB(255, 52, 52, 52),
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Icon(

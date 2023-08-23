@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:listapp/home.dart';
 import 'package:listapp/settings.dart';
+import 'package:listapp/splash.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Homepage(),
+      home: Splash(),
     );
   }
 }

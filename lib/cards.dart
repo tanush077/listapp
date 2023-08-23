@@ -36,7 +36,7 @@ class Cardpreset extends StatelessWidget {
                   Radius.circular(12),
                 ),
               ),
-              tileColor: tileBackgroundColor,
+              tileColor: Colors.white,
               leading: Image.asset(imageAsset),
               title: Text(
                 title,
