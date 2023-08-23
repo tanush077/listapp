@@ -19,6 +19,8 @@ class Cardpreset extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
+        child: SizedBox(
+      width: 350,
       child: Card(
         shape: RoundedRectangleBorder(
           side: BorderSide(color: cardBorderColor, width: 3),
@@ -52,6 +54,6 @@ class Cardpreset extends StatelessWidget {
           ],
         ),
       ),
-    );
+    ));
   }
 }

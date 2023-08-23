@@ -43,7 +43,7 @@ class _HomepageState extends State<Homepage> {
               ),
               const SizedBox(height: 30),
               const Text(
-                'General List',
+                'Trial list :',
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: 28,

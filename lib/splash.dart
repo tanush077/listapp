@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:listapp/home.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:motion/motion.dart';
 
 class Splash extends StatefulWidget {
   const Splash({Key? key}) : super(key: key);
@@ -18,7 +17,7 @@ class _SplashState extends State<Splash> {
     super.initState();
 
     Timer(
-      const Duration(seconds: 5),
+      const Duration(seconds: 8),
       () {
         Navigator.pushReplacement(
           context,
